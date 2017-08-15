@@ -1,0 +1,43 @@
+.gamethreadepage {
+    background: #fff;
+    margin: 30px 0 40px 0;
+    position: relative;
+}
+
+.gamethreadepage h3 {
+    width: 100%;
+    font-size: 55px;
+    font-weight: 100;
+    text-align: center;
+}
+.well {
+  margin-left:555px;
+  width:50%;
+  min-height: 55px;
+}
+
+#det {
+  min-height: 300px;
+}
+
+.gameList {
+  float:left;
+}
+
+#twit {
+
+  margin-right: 1%;
+  margin-left:50%;
+}
+
+#tittleElem {
+  font-size:55px;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+#test {
+  display: none;
+
+}

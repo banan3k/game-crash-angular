@@ -1,0 +1,12 @@
+<div class="game-list">
+    <ul>
+
+        <game-thread-item *ngFor="let item of store.gamethread[gameGlobalName]"
+                   [item]="item">
+        </game-thread-item>
+
+        <div class="nothing-done" *ngIf="store.noProblematic">
+            Game is perfect so far
+        </div>
+    </ul>
+</div>

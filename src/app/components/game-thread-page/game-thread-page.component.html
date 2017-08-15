@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+</head>
+
+<!--<body onload="document.getElementById('gameTittle').textContent=window.location.href.split('/')[window.location.href.split('/').length-1].replace('%20', ' ')">
+-->
+<body>
+    <div class="gamethreadepage">
+    <div id="test">0</div>
+
+
+
+    <h3><div id="gameTittle" name="gameTittle">{{gameGlobalName}}</div></h3>
+    <new-game-thread> </new-game-thread>
+
+    <game-thread-list class="gameList"></game-thread-list>
+    <!--    <label id="det" name="det">detailes here</label>
+
+    <div class="well" id="opis" contenteditable="true" ng-model="text01" (blur)="changedText()">aaa
+</div>  -->
+    <h5><div class="well" height="50px" id="detTittle" name="detTittle" contenteditable="true" ng-model="text01" (blur)="changedTittle()">{{firstTittle}}</div></h5>
+    <div class="well" id="det" name="det" contenteditable="true" ng-model="text01" (blur)="changedText()">{{firstOpis}}</div>
+
+<div id="twit" name="twit">
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Sunsets don&#39;t getkjjddW much better than this one over <a href="https://twitter.com/{{gameGlobalName}}">@{{gameGlobalName}}</a>. <a href="https://twitter.com/hashtag/nature?src=hash">#{{gameGlobalName}}</a> <a href="https://twitter.com/hashtag/sunset?src=hash">#sunset</a>
+        <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Dept of Interior (@Interior) <a href="{{firstUrl}}">
+      4</a></blockquote>
+</div>
+<label id="twittUrl" contenteditable="true" ng-model="text01" (blur)="changedUrl()">wprowadź nowy link do twittera</label>
+
+
+  </div>
+
+
+</body>
+
+</html>

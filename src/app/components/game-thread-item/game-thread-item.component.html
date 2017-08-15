@@ -1,0 +1,21 @@
+<li class="well">
+<nav>
+
+    <div (click)="showGameThread()" class="view">
+
+        <label (click)="changeName()">{{item.tytul}}</label>
+
+        <button *ngIf="!item.completed"
+                (click)="ticketClicked()">
+            {{item.tickets}}
+        </button>
+        <button *ngIf="!item.completed"
+                (click)="doneClicked()"
+                class="btn btn-danger">
+            x?
+        </button>
+
+    </div>
+
+</nav>
+</li>

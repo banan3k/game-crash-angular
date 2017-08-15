@@ -1,0 +1,17 @@
+<li class="well">
+<nav>
+
+    <div (click)="showGameThread()" class="view" routerLink="/gamethread/{{item.text}}"  routerLinkActive="active">
+
+        <label (click)="changeName()">{{item.text}}</label>
+
+        <button *ngIf="!item.completed"
+                (click)="doneClicked()"
+                class="btn btn-danger">
+            x
+        </button>
+
+    </div>
+
+</nav>
+</li>

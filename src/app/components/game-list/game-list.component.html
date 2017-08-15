@@ -1,0 +1,13 @@
+<div class="game-list">
+    <ul>
+
+        <game-item *ngFor="let item of store.items"
+                   [item]="item"
+                   (done)="removeItem($event)">
+        </game-item>
+
+        <div class="all-done" *ngIf="store.isEmpty">
+            Wygląda na to, że nie ma jeszcze żadnej gry
+        </div>
+    </ul>
+</div>
